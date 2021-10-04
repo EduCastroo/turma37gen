@@ -124,10 +124,21 @@
 					
 				}
 			}
+			
+			
 			escreva("\nDIGITE A QUANTIDADE NECESSARIA: ")
 			
-			leia(qtdCarrinho[c1])	
+			leia(qtdCarrinho[c1])
+
 			
+			
+			// VALIDADOR QUANTIDADE CARRINHO
+			para(inteiro quanti = 0; qtdCarrinho[c1] < 0 ou qtdCarrinho[c1] > 10; quanti++){
+				escreva("DIGITE UMA QUANTIDADE VALIDA: ")
+				leia(qtdCarrinho[c1])
+				}
+			
+						
 			//c1 += 1
 			//qtdCarrinho[c1] = qtdCarrinho[]
 			 //SEU CARRINHO
@@ -280,8 +291,8 @@
 				se (notaFiscal=="S"){
 					
 					escreva("\n\nOBRIGADA PELA COMPRA E VOLTE SEMPRE\n")
-				     escreva("\nNota Fiscal de Servicos Eletronica - NFS-e No. 584562925 do  prestador de servicos: \n")
-				     escreva("Razao Social: WAKANDA STORE LTDA\n")
+				     escreva("\nNota Fiscal de Serviﾃｧos Eletronica - NFS-e No. 584562925 do  prestador de servicos: \n")
+				     escreva("Razao Social: WAKANDA STORE\n")
 				     escreva("E-mail: faleconosco@wakandastore.com\n")
 				     escreva("CCM : 34.972.128-2\n")
 				     escreva("CNPJ: 123.321.111/0001-66\n")
@@ -324,9 +335,9 @@
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1587; 
+ * @POSICAO-CURSOR = 8651; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {c1, 8, 10, 2}-{qtdCarrinho, 9, 10, 11}-{codigo, 22, 10, 6}-{estoqueProduto, 40, 11, 14}-{carrinhoEstProd, 45, 11, 15}-{j, 150, 17, 1};
+ * @SIMBOLOS-INSPECIONADOS = {c1, 8, 10, 2}-{qtdCarrinho, 9, 10, 11}-{codigo, 22, 10, 6}-{estoqueProduto, 40, 11, 14}-{carrinhoEstProd, 45, 11, 15}-{j, 161, 17, 1};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
