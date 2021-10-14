@@ -42,12 +42,22 @@ public abstract class Conta {
 	
 	
 	public void debito(double valor) {
-		while(this.saldo >= valor && valor > 0) {
+		if (this.saldo >= valor) {
 		this.saldo -= valor;
 			// TODO implementar regras de para saque
 		}
 	}
 	
+	// VERIFICA SE O VALOR DIGITADO FOI NEGATIVO
+	public boolean valorNegativo(double valor) {
+		boolean negativo;
+		if (valor < 0) {
+			negativo = true;
+		} else {
+			negativo = false;
+		}
+		return negativo;
+	}
 	
 
 	public boolean isAtivo() {
@@ -56,6 +66,13 @@ public abstract class Conta {
 
 	public void ativarConta(boolean ativo) {
 		this.ativo = ativo;
+	}
+	
+	public void mostraTela() {
+		System.out.println("NOME DO BANCO");
+		System.out.println("SLOGAN\n\n");
+		System.out.println("CONTA POUPANÇA");
+		System.out.println("\n\nSaldo Atual: R$ " + this.getSaldo());	
 	}
 	
 	

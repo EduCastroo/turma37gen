@@ -12,9 +12,45 @@ public class Testes {
 
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
-
+		double controle;
+		double valor;
+		double conversor;
+		
+		ContaEspecial conta = new ContaEspecial(2314, "782354256");
+		
+		System.out.println("DIGITE O VALOR DA OPERAÇÃO: ");
+		valor = ler.nextDouble();
 		
 		
+		while(conta.valorNegativo(valor)){
+			System.out.println("Valor inválido, digite novamente: ");
+			valor = ler.nextDouble();
+		}
+		
+		
+		if (conta.validaTransacao(valor)) {
+			conta.debito(valor);
+			if (conta.getSaldo() < 0) {
+				
+				
+				controle = Math.abs(conta.getSaldo());
+				
+				conta.usarLimite(controle);
+				conta.credito(controle);
+			}
+		}
+		
+		conta.imprimeSaldos();
+		conta.imprimeTotalConta();
+		
+		
+		ContaPoupanca contapoupa = new ContaPoupanca(123141, "267458236", 29);
+		
+		
+		
+		if(contapoupa.verificaAniversario(29)) {
+			contapoupa.correcao();
+		}
 		
 	}
 

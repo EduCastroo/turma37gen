@@ -7,7 +7,7 @@ public class ContaEstudantil extends Conta{
 	
 	public ContaEstudantil(int numero, String cpf) {
 		super(numero, cpf);
-		// TODO Auto-generated constructor stub
+		this.limiteEstudantil = 5000.0;
 	}
 
 
@@ -21,8 +21,11 @@ public class ContaEstudantil extends Conta{
 	}
 	
 	
-	public void usarEstudantil() {
+	public void usarEstudantil(double valor) {
 		//TODO soma no saldo e tira do limite estudantil
+		this.limiteEstudantil -= valor;
+		this.saldo += valor;
+		//TODO VERIFICAR RESTRIÇÕES SOBRE VALORES NEGATIVOS E LIMITE DO LIMITE ESTUDANTIL
 	}
 	
 

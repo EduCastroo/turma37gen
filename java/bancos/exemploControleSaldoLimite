@@ -1,0 +1,21 @@
+	ContaEspecial conta = new ContaEspecial(2314, "782354256");
+		
+		System.out.println("DIGITE O VALOR DA OPERAÇÃO: ");
+		valor = ler.nextDouble();
+		
+		if (conta.validaTransacao(valor)) {
+			conta.debito(valor);
+			if (conta.getSaldo() < 0) {
+				
+				
+				controle = Math.abs(conta.getSaldo());
+				
+				conta.usarLimite(controle);
+				conta.credito(controle);
+			}
+		}
+		
+		conta.imprimeSaldos();
+		conta.imprimeTotalConta();
+		
+	}

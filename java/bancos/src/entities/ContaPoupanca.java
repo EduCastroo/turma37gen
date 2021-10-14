@@ -23,6 +23,18 @@ public class ContaPoupanca extends Conta{
 		this.saldo += this.saldo * 0.05;
 		
 	}
+	
+	public boolean verificaAniversario(int dia) {
+		boolean aniversario;
+		
+		if(this.diaAniversarioPoupanca == dia) {
+			aniversario = true;
+		} else {
+			aniversario = false;
+		}
+		
+		return aniversario;
+	}	
 		
 	
 	//TODO Comparar se a data informada pelo usuario é a mesma data do aniversário, 

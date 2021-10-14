@@ -6,6 +6,7 @@ public class ContaEmpresa extends Conta{
 	
 	public ContaEmpresa(int numero, String cpf) {
 		super(numero, cpf);
+		this.emprestimoEmpresa = 10000.0;
 		// TODO Auto-generated constructor stub
 	}
 
@@ -17,8 +18,11 @@ public class ContaEmpresa extends Conta{
 		this.emprestimoEmpresa = emprestimoEmpresa;
 	}
 	
-	public void pedirEmprestimo() {
+	public void pedirEmprestimo(double valor) {
 		//TODO SOMA NO SALDO E TIRA DO EMPRESTIMO
+		this.emprestimoEmpresa -= valor;
+		this.saldo += valor; 
+		//TODO VERIFICAR RESTRIÇÕES SOBRE VALORES NEGATIVOS E LIMITE DO EMPRÉSTIMO
 	}
 	
 	
