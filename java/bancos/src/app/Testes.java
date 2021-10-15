@@ -18,12 +18,12 @@ public class Testes {
 		
 		ContaEspecial conta = new ContaEspecial(2314, "782354256");
 		
-		System.out.println("DIGITE O VALOR DA OPERA√á√ÉO: ");
+		System.out.println("DIGITE O VALOR DA OPERA«√O: ");
 		valor = ler.nextDouble();
 		
 		
 		while(conta.valorNegativo(valor)){
-			System.out.println("Valor inv√°lido, digite novamente: ");
+			System.out.println("Valor invalido, digite novamente: ");
 			valor = ler.nextDouble();
 		}
 		

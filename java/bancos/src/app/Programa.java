@@ -5,7 +5,7 @@ import java.util.Scanner;
 import entities.*;
 
 public class Programa {
-// TODO conta nÃ£o pode ficar negativa depois dos possiveis 10 movimentos
+// TODO conta não pode ficar negativa depois dos possiveis 10 movimentos
 
 	public static void main(String[] args) {
 
@@ -35,15 +35,15 @@ public class Programa {
 			System.out.println("DIGITE UMA OPÇÃO VÁLIDA: ");
 			escolhaTipoConta = lerInt.nextInt();
 		}
-		// CONTA POUPANÃ‡A
+		// CONTA POUPANÇA
 		if (escolhaTipoConta == 1) {
 			System.out.println("DIGITE O NUMERO DO SEU CPF: ");
 			cpfCliente = lerString.nextLine();
 			System.out.println("INFORME O DIA DO MES: ");
 			diaData = lerInt.nextInt();
 			ContaPoupanca conta = new ContaPoupanca(escolhaTipoConta, cpfCliente, diaData);
-			System.out.println("CONTA POUPANÃ‡A CRIADA");
-			tipoConta = "POUPANÃ‡A";
+			System.out.println("CONTA POUPANÇA CRIADA");
+			tipoConta = "POUPANÇA";
 			// FIM DA TELA 1
 			// LIMPEZA DE TELA - DEPOIS ME DIZ SE TU ACHOU UM FLUSH DA VIDA ou algo a mais
 			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
@@ -54,7 +54,7 @@ public class Programa {
 			// LIMPEZA DE TELA
 
 			conta.mostraTela();
-			System.out.printf("MOVIMENTO - D-debito ou C-CrÃ©dito: ");
+			System.out.printf("MOVIMENTO - D-debito ou C-Credito: ");
 			tipoMovimento = lerString.nextLine();
 			System.out.printf("Valor movimento: R$ ");
 			valorMovimento = lerInt.nextDouble();
@@ -62,7 +62,7 @@ public class Programa {
 			continua = lerString.nextLine();
 			// CONTA CORRENTE
 		} else if (escolhaTipoConta == 2) {
-			System.out.println("DIGITE O NÃšMERO DO SEU CPF: ");
+			System.out.println("DIGITE O NUMERO DO SEU CPF: ");
 			cpfCliente = lerString.nextLine();
 			ContaCorrente conta = new ContaCorrente(escolhaTipoConta, cpfCliente);
 			System.out.println("CONTA CORRENTE CRIADA");
@@ -70,7 +70,7 @@ public class Programa {
 
 			// FIM DA TELA 1
 			// LIMPEZA DE TELA - DEPOIS ME DIZ SE TU ACHOU UM FLUSH DA VIDA ou algo a mais
-			// pra limpar a tela e recomeÃ§ar, tive que usar gambiarra aqui...
+			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
 			for (
 
 					int i = 0; i < 50; ++i)
@@ -79,7 +79,7 @@ public class Programa {
 
 			// INICIO TELA 2
 			conta.mostraTela();
-			System.out.printf("MOVIMENTO - D-debito ou C-CrÃ©dito: ");
+			System.out.printf("MOVIMENTO - D-debito ou C-Credito: ");
 			tipoMovimento = lerString.nextLine();
 			System.out.printf("Valor movimento: R$ ");
 			valorMovimento = lerInt.nextDouble();
@@ -87,7 +87,7 @@ public class Programa {
 			continua = lerString.nextLine();
 			// CONTA ESPECIAL
 		} else if (escolhaTipoConta == 3) {
-			System.out.println("DIGITE O NÃšMERO DO SEU CPF: ");
+			System.out.println("DIGITE O NUMERO DO SEU CPF: ");
 			cpfCliente = lerString.nextLine();
 			ContaEspecial conta = new ContaEspecial(escolhaTipoConta, cpfCliente);
 			System.out.println("CONTA ESPECIAL CRIADA");
@@ -95,7 +95,7 @@ public class Programa {
 
 			// FIM DA TELA 1
 			// LIMPEZA DE TELA - DEPOIS ME DIZ SE TU ACHOU UM FLUSH DA VIDA ou algo a mais
-			// pra limpar a tela e recomeÃ§ar, tive que usar gambiarra aqui...
+			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
 			for (
 
 					int i = 0; i < 50; ++i)
@@ -112,7 +112,7 @@ public class Programa {
 			continua = lerString.nextLine();
 			// CONTA EMPRESA
 		} else if (escolhaTipoConta == 4) {
-			System.out.println("DIGITE O NÃšMERO DO SEU CPF: ");
+			System.out.println("DIGITE O NUMERO DO SEU CPF: ");
 			cpfCliente = lerString.nextLine();
 			ContaEmpresa conta = new ContaEmpresa(escolhaTipoConta, cpfCliente);
 			System.out.println("CONTA EMPRESA CRIADA");
@@ -120,7 +120,7 @@ public class Programa {
 
 			// FIM DA TELA 1
 			// LIMPEZA DE TELA - DEPOIS ME DIZ SE TU ACHOU UM FLUSH DA VIDA ou algo a mais
-			// pra limpar a tela e recomeÃ§ar, tive que usar gambiarra aqui...
+			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
 			for (
 
 					int i = 0; i < 50; ++i)
@@ -129,7 +129,7 @@ public class Programa {
 
 			// INICIO TELA 2
 			conta.mostraTela();
-			System.out.printf("MOVIMENTO - D-debito ou C-CrÃ©dito: ");
+			System.out.printf("MOVIMENTO - D-debito ou C-Credito: ");
 			tipoMovimento = lerString.nextLine();
 			System.out.printf("Valor movimento: R$ ");
 			valorMovimento = lerInt.nextDouble();
@@ -138,7 +138,7 @@ public class Programa {
 
 			// CONTA ESTUDANTIL
 		} else if (escolhaTipoConta == 5) {
-			System.out.println("DIGITE O NÃšMERO DO SEU CPF: ");
+			System.out.println("DIGITE O NUMERO DO SEU CPF: ");
 			cpfCliente = lerString.nextLine();
 			ContaEstudantil conta = new ContaEstudantil(escolhaTipoConta, cpfCliente);
 			System.out.println("CONTA ESTUDANTIL CRIADA");
@@ -146,7 +146,7 @@ public class Programa {
 
 			// FIM DA TELA 1
 			// LIMPEZA DE TELA - DEPOIS ME DIZ SE TU ACHOU UM FLUSH DA VIDA ou algo a mais
-			// pra limpar a tela e recomeÃ§ar, tive que usar gambiarra aqui...
+			// pra limpar a tela e recomeçar, tive que usar gambiarra aqui...
 			for (
 
 					int i = 0; i < 50; ++i)
@@ -155,7 +155,7 @@ public class Programa {
 
 			// INICIO TELA 2
 			conta.mostraTela();
-			System.out.printf("MOVIMENTO - D-debito ou C-CrÃ©dito: ");
+			System.out.printf("MOVIMENTO - D-debito ou C-Credito: ");
 			tipoMovimento = lerString.nextLine();
 			System.out.printf("Valor movimento: R$ ");
 			valorMovimento = lerInt.nextDouble();

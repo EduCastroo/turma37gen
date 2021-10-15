@@ -71,7 +71,7 @@ public abstract class Conta {
 	public void mostraTela() {
 		System.out.println("NOME DO BANCO");
 		System.out.println("SLOGAN\n\n");
-		System.out.println("CONTA POUPANÃ‡A");
+		System.out.println("CONTA POUPANÇA");
 		System.out.println("\n\nSaldo Atual: R$ " + this.getSaldo());	
 	}
 	
