@@ -1,6 +1,6 @@
 package app;
 
-import java.util.*; //* junta todas a bbs do java da pasta util
+import java.util.*; //* junta todas as bibliotecas do java da pasta util
 import java.text.*;
 import java.time.LocalDateTime; //Como manipular datas
 import java.time.format.DateTimeFormatter;
