@@ -1,0 +1,1 @@
+UPDATE tb_personagem SET fk_classe = 5 WHERE ID = 7;

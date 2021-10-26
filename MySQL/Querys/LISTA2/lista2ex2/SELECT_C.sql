@@ -1,0 +1,1 @@
+SELECT * FROM tb_pizza where sabor LIKE 'C%';

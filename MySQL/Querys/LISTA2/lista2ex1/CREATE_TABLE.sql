@@ -1,0 +1,6 @@
+CREATE TABLE tb_classe(
+ID INT NOT NULL AUTO_INCREMENT,
+nome_classe VARCHAR(15),
+habilidade VARCHAR(15),
+PRIMARY KEY (ID)
+);

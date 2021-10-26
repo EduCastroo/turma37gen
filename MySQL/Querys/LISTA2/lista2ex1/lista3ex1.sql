@@ -59,5 +59,6 @@ SELECT * FROM tb_classe
 INNER JOIN tb_personagem
 ON tb_classe.ID = tb_personagem.fk_classe;
 
-SELECT * FROM tb_classe
-WHERE ID = 2;
+UPDATE tb_personagem SET fk_classe = 5 WHERE ID = 7;
+
+SELECT * FROM tb_personagem WHERE fk_classe = 5;

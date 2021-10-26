@@ -1,0 +1,1 @@
+SELECT * FROM tb_personagem where nome LIKE 'C%';
