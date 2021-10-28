@@ -12,5 +12,8 @@ public class helloController {
 	public String hello() {
 		return "Hello Generation!!!";
 	}
-
+	@GetMapping("/mentalidades")
+	public String texto2() {
+		return "Mentalidades e Habilidades";
+	}
 }
