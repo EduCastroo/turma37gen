@@ -8,5 +8,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.generation.blogPessoal.model.Tema;
 
 public interface TemaRepository extends JpaRepository<Tema, Long> {
-	public List<Tema> findAllByDescricaoContainingIgnoreCase( String descricao);
+	public List<Tema> findAllByDescricaoContainingIgnoreCase(String descricao);
 }
